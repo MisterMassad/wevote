@@ -1,0 +1,10 @@
+{% extends "base.jinja" %}
+{% block content %}
+<form action="/handleuser" method="POST">
+<div class="form-group">
+Name:<br>
+<input type="text" class="form-control" name="username">
+</div>
+<input type="submit" class="btn btn-primary" value="Add User">
+</form>
+{% endblock %}

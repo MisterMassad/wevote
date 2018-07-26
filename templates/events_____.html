@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styleevents.css')}}">
+
+<br>
+<h1 id="header1"> Vote for the game </h1>
+
+<br>
+ 
+<form action="/handlevote" method = "POST">  
+<input name="sport" value="BB" type="submit" style="background-image:url('/../static/Sports.jpg'); -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; ">
+</form>
+
+<form action="/handlevote" method = "POST">  
+<input name="sport" value="FB" type="submit" style="background-image:url('/../static/FBVote.jpg');; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+</form>
+
+<form action="/handlevote" method = "POST">  
+<input name="sport" value="F" type="submit" style="background-image:url('/../static/FVote.jpg'); -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+
+{% endblock %}
+

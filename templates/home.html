@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='stylehome.css') }}">
+<img src="{{ url_for('static', filename='wecode.jpg') }}" height="50%" width="100%">
+
+
+<div class="bgimg1">
+<h1 id="header1"> Who are we?</h1>
+
+<p id="paragraph"> Welcome to Code for Palestine WeVote page! Our page is designed to ease your experience in the WeCode camp! You can see and vote for events, teams, games, student council team, and more! </p> 
+<br>
+
+<h1 id="header1"> Check it out!</h1>
+<br>
+<div class="card" style=" display: inline-block" align="left" >
+  <img src="{{ url_for('static', filename='Sports.jpg') }}" width="100%">
+  <h1>Sports & Games</h1>
+  <p> Use this page to vote and check for the upcoming games!</p>
+  <a class="nav-link" href="votepage">
+  <p><button>Click Me</button></p>
+  </a>
+
+</div>
+
+
+<div class="card"  style= "display: inline-block" align="center">
+  <img src="{{ url_for('static', filename='movienight.png') }}"  width="100%">
+  <h1>Movie Nights</h1>
+  <p> Use this page to vote and check for the upcoming movie nights!</p>
+  <a class="nav-link" href="movies">
+  <p><button>Click Me</button></p>
+  </a>
+
+</div>
+
+
+<div class="card"  style="display: inline-block" align="center">
+  <img src="{{ url_for('static', filename='Sports.jpg') }}"  width="100%">
+  <h1>Events</h1>
+  <p> Use this page to vote and check for the upcoming games!</p>
+  <a class="nav-link" href="events">
+  <p><button>Click Me</button></p>
+  </a>
+
+
+</div>
+
+
+
+<!-- 
+<form action="/handleuser" method = "POST"> 
+	<b> Poll </b> 
+	<b> Do you like web polls? </b> <br>
+
+<input type="radio" name="answer" value="1"> Yes I do <br>
+
+<input type="radio" name="answer" value="2">No, I do not<BR>
+
+<input type="radio" name="answer" value="3">I dont know<BR>
+
+<input type="radio" name="answer" value="4">depends on the question<P>
+
+<input type="submit" name="submit" value="Submit">
+
+</form>
+
+ -->
+
+
+{% endblock %}

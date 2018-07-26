@@ -1,0 +1,19 @@
+#header1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+#paragraph {
+    text-indent: 50px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+input {
+    width: 25%;
+    height: 225px;
+    margin-left: 73px;
+    background-color: yellow;
+}
+

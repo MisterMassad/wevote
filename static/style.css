@@ -1,0 +1,11 @@
+
+.homepageH1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+.homepageP {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;

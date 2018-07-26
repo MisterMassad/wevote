@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+  <title>My Final Project</title> 
+
+<style> 
+#myHeader {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+
+
+</style>
+
+<h1 id="myHeader"> WeVote </h1>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  
+  <!-- <a class="navbar-brand" href="#">WeVote</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="vote">Vote</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="events">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="movies">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="thelogin">Login</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      <img src="{{ url_for('static', filename='logo.png') }}" width="50%">
+    </span>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+{% block body %}
+<h1>My home page</h1>
+
+<p>My first paragraph.</p>
+{% endblock%}
+</body>
+</html>
+
+
+
